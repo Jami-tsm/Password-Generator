@@ -6,7 +6,7 @@ import java.util.*;
  * @DateStarted: 05.12.2024
  */
 
-public class Main {
+public class simplePasswordGenerator {
 
     private List<String> passwords = new ArrayList<>();
     private static final char[] LOWER = "abcdefghijklmnopqrstuvwxyz".toCharArray();
@@ -34,22 +34,22 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Main main = new Main();
+        simplePasswordGenerator simplePasswordGenerator = new simplePasswordGenerator();
         System.out.println("Enter number of passwords: ");
-        main.numPasswords = sc.nextInt();
+        simplePasswordGenerator.numPasswords = sc.nextInt();
         System.out.println("Enter length of passwords: ");
         System.out.println("P.S. Passwords of length 12-15 tend to be strongest!");
-        main.lenPasswords = sc.nextInt();
-        for (int index= 0;index< main.numPasswords;index++){
+        simplePasswordGenerator.lenPasswords = sc.nextInt();
+        for (int index = 0; index< simplePasswordGenerator.numPasswords; index++){
             StringBuilder pass = new StringBuilder();
-            for (int jndex=0;jndex<main.lenPasswords;jndex++){
-                pass.append(main.generateChar());
+            for (int jndex = 0; jndex< simplePasswordGenerator.lenPasswords; jndex++){
+                pass.append(simplePasswordGenerator.generateChar());
             }
-            main.passwords.add(String.valueOf(pass));
+            simplePasswordGenerator.passwords.add(String.valueOf(pass));
         }
-        System.out.println(main.numPasswords+" passwords generated of length "+main.lenPasswords);
-        for (int i=0;i<main.passwords.size();i++){
-            System.out.println((i+1)+". "+main.passwords.get(i));
+        System.out.println(simplePasswordGenerator.numPasswords+" passwords generated of length "+ simplePasswordGenerator.lenPasswords);
+        for (int i = 0; i< simplePasswordGenerator.passwords.size(); i++){
+            System.out.println((i+1)+". "+ simplePasswordGenerator.passwords.get(i));
         }
     }
 }
