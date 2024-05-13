@@ -7,7 +7,7 @@ This repository contains a simple yet robust password generator tool designed to
 ## Features
 
 - **Secure Passwords**: Generate strong and randomized passwords to enhance cybersecurity measures.
-- **Customizable Options**: Customize password length to suit your specific requirements.
+- **Customizable Options**: Ability to include special characters and customize password length to suit your specific requirements.
 - **Easy Integration**: Easily integrate the password generator into your projects with straightforward usage instructions.
 - **Clean Codebase**: The generator is developed using modern programming practices, ensuring readability and maintainability.
 
