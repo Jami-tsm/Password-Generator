@@ -28,5 +28,4 @@ This repository contains a simple yet robust password generator tool designed to
 Contributions to this project are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve the password generator.
 
 ## License
-This project is licensed under the MIT License.Feel free to customize the sections or add more details as needed!
-
+This project is licensed under the MIT License.
